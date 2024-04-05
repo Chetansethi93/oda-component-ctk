@@ -201,10 +201,10 @@ for (const index in components) {
         done()
         expect(management, 'Spec has a management field of type object').to.be.a('object')
       })
-      it('Spec has security', function (done) {
+      it('Spec has securityFunction', function (done) {
         const spec = componentDoc.get('spec')
-        const security = spec.get('security')
-        expect(security, 'Spec has a security field of type object').to.be.a('object')
+        const security = spec.get('securityFunction')
+        expect(security, 'Spec has a securityFunction field of type object').to.be.a('object')
         done()
       })
     }
